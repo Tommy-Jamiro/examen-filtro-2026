@@ -1,0 +1,66 @@
+:root {
+  --primary: #e94560;
+  --bg-dark: #1a1a2e;
+  --bg-medium: #16213e;
+  --bg-light: #0f3460;
+  --text-main: #eeeeee; /* Contraste mejorado */
+  --text-muted: #cccccc;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: var(--text-main);
+  background: var(--bg-dark);
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.header { grid-area: header; background: var(--bg-dark); padding: 1rem 2rem; border-bottom: 3px solid var(--primary); }
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: var(--text-main); text-decoration: none; font-weight: bold; }
+
+.container { grid-area: main; }
+
+/* Grid Layout para Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.stat-card {
+  background: var(--bg-medium);
+  border: 1px solid var(--primary);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Flexbox para Habilidades Tags */
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  background: var(--primary);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.footer { grid-area: footer; text-align: center; padding: 2rem; border-top: 3px solid var(--primary); }
+
+/* Accesibilidad: Foco visible */
+input:focus, select:focus, button:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
