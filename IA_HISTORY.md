@@ -26,29 +26,24 @@
 
 ```
 <!--
-  Indicá en qué punto del examen usaste este prompt.
-  No es sobre la hora exacta — es sobre el contexto: ¿qué estabas intentando resolver cuando recurriste a la IA?
-  Ej: "Cuando no sabía cómo estructurar el layout con Grid."
-  Ej: "Al terminar el HTML, para verificar si me faltaba algo de accesibilidad."
-  Ej: "Al principio del ejercicio de JS, para entender cómo arrancar."
--->
+  Al inicio del examen. estaba analizando el index.html original y note varios errores por lo cual me puse a corregir casi todo manualmente pero no me tenia mucha fe y le pedi a la IA que me corrigiera el codigo original.
 ```
 
 ### Lo que le pedí a la IA
 
 ```
-<!-- Pegá aquí el prompt exacto que escribiste. Debe ser el texto que vos escribiste, no la respuesta. -->
+<!-- 
+  Necesito que veas la estructura de HTML que te pase y me digas si ves errores de accesibilidad o algun otro como por ejemplo el uso excesivo de <div> y ayudame a reemplazar todo por etiquetas semanticas de HTML5. 
+ -->
 ```
 
 ### Análisis del resultado obtenido
 
 ```
 <!--
-  Describí con tus propias palabras qué generó la IA. No copies el código ni la respuesta — analizála.
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué enfoque tomó la IA para resolver el problema?
-  - ¿El resultado era lo que esperabas? ¿Por qué sí o por qué no?
-  - ¿Qué parte te resultó útil como punto de partida?
+  - un enfoque explicativo me detallaba cada etiqueta y el uso del mismo.
+  - si y no me saco las dudas en algunas etiquetas que cambie antes de recurrir a la IA.
+  - me resulto util al momento de corregir los div.
 -->
 ```
 
@@ -56,13 +51,9 @@
 
 ```
 <!--
-  Esta sección es la más importante. Sé específico/a. Mínimo 3 oraciones.
-  Respondé:
-  - ¿Qué error concreto tenía el resultado? (semántico, de accesibilidad, lógico, de estilo, etc.)
-  - ¿Cómo lo detectaste? (al probarlo en el browser, al leer el código, al ver la consola...)
-  - ¿Por qué estaba técnicamente incorrecto o insuficiente?
-  - ¿Qué cambiaste exactamente para que funcionara bien?
-  Si no corregiste nada, explicá por qué el resultado era correcto tal como estaba.
+  - creo a mi parecer el error que tenia o que no detecto fue que el <style> tendria que estar en otro archivo exclusivo como style.css. 
+  - Al leer el codigo ya que es una mala práctica tenerlo en el index.html por si el proyecto crece.
+  - le mencione el error a la IA y recien ahi me devolvio la respuesta con los pasos a seguir.
 -->
 ```
 
@@ -74,29 +65,27 @@
 
 ```
 <!--
-  Indicá en qué punto del examen usaste este prompt.
-  No es sobre la hora exacta — es sobre el contexto: ¿qué estabas intentando resolver cuando recurriste a la IA?
-  Ej: "Cuando no sabía cómo estructurar el layout con Grid."
-  Ej: "Al terminar el HTML, para verificar si me faltaba algo de accesibilidad."
-  Ej: "Al principio del ejercicio de JS, para entender cómo arrancar."
+  Al final del examen cuanto tenia que hacer la parte de JavaScript, para entenderlo.
 -->
 ```
 
 ### Lo que le pedí a la IA
 
 ```
-<!-- Pegá aquí el prompt exacto que escribiste. Debe ser el texto que vos escribiste, no la respuesta. -->
+<!-- 
+  puedes ayudarme con esta consigna explicandome como deberia empezar, hace
+  de cuenta que nose programar.
+ -->
 ```
 
 ### Análisis del resultado obtenido
 
 ```
 <!--
-  Describí con tus propias palabras qué generó la IA. No copies el código ni la respuesta — analizála.
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué enfoque tomó la IA para resolver el problema?
-  - ¿El resultado era lo que esperabas? ¿Por qué sí o por qué no?
-  - ¿Qué parte te resultó útil como punto de partida?
+  - Igual al prompt 1, me explico a detalle cada cosa. 
+  - Si en esta parte si por que me ayudo como guia para armar el archivo JS ya que 
+    aun no lo domino por completo. 
+  - crear el archivo Script.
 -->
 ```
 
@@ -104,13 +93,11 @@
 
 ```
 <!--
-  Esta sección es la más importante. Sé específico/a. Mínimo 3 oraciones.
-  Respondé:
-  - ¿Qué error concreto tenía el resultado? (semántico, de accesibilidad, lógico, de estilo, etc.)
-  - ¿Cómo lo detectaste? (al probarlo en el browser, al leer el código, al ver la consola...)
-  - ¿Por qué estaba técnicamente incorrecto o insuficiente?
-  - ¿Qué cambiaste exactamente para que funcionara bien?
-  Si no corregiste nada, explicá por qué el resultado era correcto tal como estaba.
+  - La IA no menciono en ningun momento la parte de vincular el JS al HTML.
+  - Al leer el codigo.
+  - Por que no mencionaba la parte de vincular, cuando yo fui claro en decirle que haga de
+    cuenta que nose programar.
+  - Por las clases que tuvimos agregue esa parte que lo tenia anotado manualmente.
 -->
 ```
 
@@ -121,8 +108,10 @@
 ```
 <!--
   Mínimo 3 oraciones. Respondé:
-  - ¿Qué tipo de errores repitió la IA que tuviste que corregir?
-  - ¿Hubo algo que la IA resolvió bien a la primera sin que necesitaras tocarlo?
-  - ¿Cambiarías la forma en que le pedís cosas a la IA la próxima vez? ¿Por qué?
+  - Se olvidaba o se comia ciertas partes del codigo como por ejemplo en el index.
+  - No, siempre habia algun error que corregir.
+  - Si, a mi parecer se debe pedir a lujo de detalle que es exactamente lo que necesitas
+    por que de lo contrario puede tirar cualquier cosa y tambien tal vez buscar una IA exclusiva 
+    para desarrolladores web.  
 -->
 ```
